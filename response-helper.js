@@ -1,7 +1,7 @@
 const ResKit = require("./response-kit");
 const { ResData } = require("./response-data");
 
-const ResHelper = ({ status, data }) => {
+const ResHelper = ({ status, data, error }) => {
   let result = {
     statusCode: status || 500,
     message: "",
@@ -18,7 +18,7 @@ const ResHelper = ({ status, data }) => {
   const typeData = typeof data;
   typeData === "object"
     ? (result.data = ResData(data))
-    : (result.data = data || null);
+    : (result.data = data || error || null);
 
   return result;
 };
