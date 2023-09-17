@@ -1,6 +1,6 @@
 {
   "name": "better-response-helper",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Better response for getting common response from backend API call",
   "main": "index.js",
   "publishConfig":{
