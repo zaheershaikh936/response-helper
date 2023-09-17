@@ -1,10 +1,9 @@
 const { ResHelper } = require("./index");
 
 const response = {
-  status: 200,
+  status: 500,
   data: {
     message: "some message here",
-    status: 500,
   },
 };
 const result = ResHelper(response);
