@@ -25,7 +25,7 @@ To start using the "Better Response Helper" library in your client-side applicat
 ## Usage/Examples
 
 ```javascript
-const { ResHelper } = require("response-helper");
+const { ResHelper } = require("better-response-helper");
 
 function Component() {
     // API Call 
