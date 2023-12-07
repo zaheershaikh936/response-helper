@@ -13,13 +13,13 @@ const ResHelper = ({ status, data, error }, config = {}) => {
 
   let result = {
     statusCode: status || mergedConfig.defaultStatusCode,
-    message: ""
+    message: "",
     success: mergedConfig.defaultSuccess,
   };
 
   result.statusCode <= 199 || result.statusCode >= 225
     ? (
-        (result.description = ResKit[resultstatusCode].description),
+        (result.description = ResKit[result.statusCode].description),
         (result.success = false)
       )
     : null;
